@@ -644,47 +644,55 @@
   <div class="kpi-grid kpi-grid-4" style="margin-bottom:32px">
     <div class="kpi-card dark">
       <div class="kpi-label">Reproducciones totales</div>
-      <div class="kpi-val">110,115</div>
-      <div class="kpi-sub">5 pilares · ambas campañas</div>
+      <div class="kpi-val">700,764</div>
+      <div class="kpi-sub">5 pilares · registros + acumulado</div>
     </div>
     <div class="kpi-card dark">
       <div class="kpi-label">Impresiones totales</div>
-      <div class="kpi-val">112,258</div>
-      <div class="kpi-sub">Mar 12 – Abr 14, 2026</div>
+      <div class="kpi-val">990,256</div>
+      <div class="kpi-sub">ambas campañas combinadas</div>
     </div>
     <div class="kpi-card">
       <div class="kpi-label">Mayor volumen</div>
-      <div class="kpi-val">74,133</div>
+      <div class="kpi-val">249,287</div>
       <div class="kpi-sub">Carros · reproducciones</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Tasa reproducción prom.</div>
-      <div class="kpi-val">98.1%</div>
-      <div class="kpi-sub">views / impresiones</div>
+      <div class="kpi-label">Mejor retención 100%</div>
+      <div class="kpi-val">17.0%</div>
+      <div class="kpi-sub">Restaurante · vieron el video completo</div>
     </div>
   </div>
 
   <div class="chart-row">
     <div class="chart-card">
-      <h3>Reproducciones por pilar</h3>
-      <p class="chart-desc">Total de veces que el video fue reproducido en el período completo.</p>
+      <h3>Reproducciones totales por pilar</h3>
+      <p class="chart-desc">Total combinado de reproducciones: campaña de registros + acumulado orgánico.</p>
       <div class="chart-wrap" style="height:280px">
-        <canvas id="cv1" role="img" aria-label="Reproducciones por pilar">Carros 74133, Selfie 30255, Restaurante 3833, Ropa 949, Viaje 945.</canvas>
+        <canvas id="cv1" role="img" aria-label="Reproducciones por pilar">Carros 249287, Restaurante 197060, Viaje 85731, Selfie 120814, Ropa 47872.</canvas>
       </div>
     </div>
     <div class="chart-card">
-      <h3>Reproducciones vs Impresiones</h3>
-      <p class="chart-desc">Comparación entre impresiones totales y reproducciones efectivas del video.</p>
+      <h3>Retención al 100% del video — combinado</h3>
+      <p class="chart-desc">% de reproducciones que vieron el video completo. Con el acumulado incluido, Restaurante lidera.</p>
       <div class="chart-wrap" style="height:280px">
-        <canvas id="cv2" role="img" aria-label="Reproducciones vs impresiones">Todos los pilares tienen tasa de reproducción superior al 97%.</canvas>
+        <canvas id="cv2" role="img" aria-label="Retención 100% combinada">Restaurante 17.0%, Ropa 9.8%, Selfie 8.7%, Viaje 8.4%, Carros 6.8%.</canvas>
       </div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <h3>Desglose de views por etapa del video — totales combinados</h3>
+    <p class="chart-desc">Cuántas reproducciones llegaron a cada hito del video (25%, 50%, 75%, 95%, 100%) sumando ambas campañas.</p>
+    <div class="chart-wrap" style="height:300px">
+      <canvas id="cv3" role="img" aria-label="Views por etapa del video">Restaurante tiene el mayor volumen en todos los puntos del embudo de video.</canvas>
     </div>
   </div>
 
   <div class="table-card">
     <div class="table-card-header">
-      <h3>Detalle de reproducciones y retención por pilar</h3>
-      <p>Reproducciones totales, impresiones y tasa de visualización completa (100%). Período combinado ambas campañas.</p>
+      <h3>Detalle de reproducciones y retención por pilar — datos combinados</h3>
+      <p>Suma de campaña de registros + acumulado orgánico. ThruPlays = vieron el video completo según Meta.</p>
     </div>
     <table>
       <thead>
@@ -698,21 +706,111 @@
           <th class="nr">Views 75%</th>
           <th class="nr">Views 100%</th>
           <th class="nr">Ret. 100%</th>
+          <th class="nr">ThruPlays</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="highlight"><td>Carros ⭐ mayor volumen</td><td class="nr">75,513</td><td class="nr">74,133</td><td class="nr">98.2%</td><td class="nr">7,929</td><td class="nr">4,826</td><td class="nr">3,566</td><td class="nr">2,568</td><td class="nr">3.5%</td></tr>
-        <tr><td>Selfie</td><td class="nr">30,884</td><td class="nr">30,255</td><td class="nr">97.9%</td><td class="nr">3,934</td><td class="nr">2,378</td><td class="nr">1,790</td><td class="nr">1,224</td><td class="nr">4.0%</td></tr>
-        <tr><td>Restaurante</td><td class="nr">3,933</td><td class="nr">3,833</td><td class="nr">97.5%</td><td class="nr">406</td><td class="nr">228</td><td class="nr">157</td><td class="nr">124</td><td class="nr">3.2%</td></tr>
-        <tr><td>Ropa</td><td class="nr">962</td><td class="nr">949</td><td class="nr">98.6%</td><td class="nr">127</td><td class="nr">80</td><td class="nr">58</td><td class="nr">45</td><td class="nr">4.7%</td></tr>
-        <tr><td>Viaje</td><td class="nr">966</td><td class="nr">945</td><td class="nr">97.8%</td><td class="nr">102</td><td class="nr">59</td><td class="nr">34</td><td class="nr">27</td><td class="nr">2.9%</td></tr>
-        <tr style="background:#F5F5F5;font-weight:600"><td>Total</td><td class="nr">112,258</td><td class="nr">110,115</td><td class="nr">98.1%</td><td class="nr">12,498</td><td class="nr">7,571</td><td class="nr">5,605</td><td class="nr">3,988</td><td class="nr">3.6%</td></tr>
+        <tr class="highlight"><td>Restaurante ⭐ mejor retención</td><td class="nr">301,327</td><td class="nr">197,060</td><td class="nr">65.4%</td><td class="nr">64,909</td><td class="nr">43,798</td><td class="nr">36,873</td><td class="nr">33,540</td><td class="nr"><strong>17.0%</strong></td><td class="nr">32,969</td></tr>
+        <tr><td>Ropa</td><td class="nr">67,199</td><td class="nr">47,872</td><td class="nr">71.2%</td><td class="nr">11,155</td><td class="nr">6,963</td><td class="nr">5,451</td><td class="nr">4,714</td><td class="nr">9.8%</td><td class="nr">4,597</td></tr>
+        <tr><td>Selfie</td><td class="nr">169,347</td><td class="nr">120,814</td><td class="nr">71.3%</td><td class="nr">25,315</td><td class="nr">16,205</td><td class="nr">12,750</td><td class="nr">10,512</td><td class="nr">8.7%</td><td class="nr">10,271</td></tr>
+        <tr><td>Viaje</td><td class="nr">113,950</td><td class="nr">85,731</td><td class="nr">75.2%</td><td class="nr">18,979</td><td class="nr">11,143</td><td class="nr">8,420</td><td class="nr">7,230</td><td class="nr">8.4%</td><td class="nr">7,032</td></tr>
+        <tr><td>Carros</td><td class="nr">338,433</td><td class="nr">249,287</td><td class="nr">73.7%</td><td class="nr">49,864</td><td class="nr">32,920</td><td class="nr">26,934</td><td class="nr">16,845</td><td class="nr">6.8%</td><td class="nr">25,242</td></tr>
+        <tr style="background:#F5F5F5;font-weight:600"><td>Total</td><td class="nr">990,256</td><td class="nr">700,764</td><td class="nr">70.8%</td><td class="nr">170,222</td><td class="nr">111,029</td><td class="nr">90,428</td><td class="nr">72,841</td><td class="nr">10.4%</td><td class="nr">80,111</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="insight-bar">
-    <p><strong>Nota metodológica:</strong> Las reproducciones corresponden al archivo de engagement del período completo y consolidan ambas campañas (registros + acumulado). <strong>Carros concentra el 67% de todas las reproducciones</strong> (74,133) por ser el video con mayor inversión y alcance. Ropa, a pesar de tener el menor volumen de views, tiene la mejor tasa de visualización completa (4.7%) — lo que confirma su superioridad en calidad creativa.</p>
+    <p><strong>Cambio clave vs datos anteriores:</strong> Al incluir el acumulado, las reproducciones totales pasan de 110,115 a <strong>700,764</strong> — un aumento de 6.4x. El pilar que más cambia es Restaurante, que sube de 3,833 views a 197,060, y ahora tiene la <strong>mejor retención al 100% con 17%</strong> — 1 de cada 6 personas que lo ve, lo ve completo. Carros sigue siendo el mayor en volumen absoluto (249,287), pero en calidad de atención Restaurante y Ropa lideran.</p>
+  </div>
+
+  <!-- DESGLOSE POR CAMPAÑA -->
+  <div style="margin-top:40px; margin-bottom:16px;">
+    <div class="section-tag">Desglose por campaña</div>
+  </div>
+
+  <div class="vs-grid" style="margin-bottom:20px">
+    <div class="vs-card">
+      <span class="vs-tag">Campaña registros · audiencia fría</span>
+      <h3>110,115 reproducciones</h3>
+      <div class="vs-stat"><span class="stat-label">Impresiones</span><span class="stat-val">112,258</span></div>
+      <div class="vs-stat"><span class="stat-label">Tasa de reproducción</span><span class="stat-val">98.1%</span></div>
+      <div class="vs-stat"><span class="stat-label">Mayor volumen</span><span class="stat-val">Carros · 74,133</span></div>
+      <div class="vs-stat"><span class="stat-label">Mejor ret. 100%</span><span class="stat-val">Ropa · 4.7%</span></div>
+      <div class="vs-stat"><span class="stat-label">ThruPlays totales</span><span class="stat-val">4,552</span></div>
+    </div>
+    <div class="vs-card dark-card">
+      <span class="vs-tag">Acumulado orgánico · audiencia caliente</span>
+      <h3 style="color:#fff">590,649 reproducciones</h3>
+      <div class="vs-stat"><span class="stat-label">Impresiones</span><span class="stat-val">877,998</span></div>
+      <div class="vs-stat"><span class="stat-label">Tasa de reproducción</span><span class="stat-val">67.3%</span></div>
+      <div class="vs-stat"><span class="stat-label">Mayor volumen</span><span class="stat-val">Carros · 175,154</span></div>
+      <div class="vs-stat"><span class="stat-label">Mejor ret. 100%</span><span class="stat-val">Restaurante · 17.3%</span></div>
+      <div class="vs-stat"><span class="stat-label">ThruPlays totales</span><span class="stat-val">75,559</span></div>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <h3>Views por pilar — Registros vs Acumulado</h3>
+    <p class="chart-desc">Desglose de reproducciones de cada pilar separado por campaña.</p>
+    <div class="chart-legend">
+      <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#FFC000"></div>Registros (audiencia fría)</div>
+      <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#1A1A1A"></div>Acumulado orgánico (audiencia caliente)</div>
+    </div>
+    <div class="chart-wrap" style="height:280px">
+      <canvas id="cv4" role="img" aria-label="Views por pilar separado por campaña">Acumulado aporta el 84% de las reproducciones totales en todos los pilares.</canvas>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>Retención 100% — Registros</h3>
+      <p class="chart-desc">% de views completas en campaña de registros (audiencia fría).</p>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="cv5" role="img" aria-label="Retención 100% campaña registros">Ropa 4.7%, Selfie 4.0%, Carros 3.5%, Restaurante 3.2%, Viaje 2.9%.</canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3>Retención 100% — Acumulado orgánico</h3>
+      <p class="chart-desc">% de views completas en acumulado (audiencia caliente). Cifras mucho más altas.</p>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="cv6" role="img" aria-label="Retención 100% acumulado">Restaurante 17.3%, Ropa 9.9%, Selfie 10.3%, Viaje 8.5%, Carros 8.2%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-card">
+    <div class="table-card-header">
+      <h3>Views por campaña y pilar — desglose completo</h3>
+      <p>Registros = pauta propia en frío · Acumulado = orgánico en audiencia caliente.</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Pilar</th>
+          <th class="nr">Views reg.</th>
+          <th class="nr">Ret. 100% reg.</th>
+          <th class="nr">ThruPlay reg.</th>
+          <th class="nr">Views acum.</th>
+          <th class="nr">Ret. 100% acum.</th>
+          <th class="nr">ThruPlay acum.</th>
+          <th class="nr">Total views</th>
+          <th class="nr">% acum. del total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>Restaurante ⭐</td><td class="nr">3,833</td><td class="nr">3.2%</td><td class="nr">118</td><td class="nr">193,227</td><td class="nr"><strong>17.3%</strong></td><td class="nr">32,851</td><td class="nr">197,060</td><td class="nr">98.1%</td></tr>
+        <tr><td>Carros</td><td class="nr">74,133</td><td class="nr">3.5%</td><td class="nr">3,167</td><td class="nr">175,154</td><td class="nr">8.2%</td><td class="nr">22,075</td><td class="nr">249,287</td><td class="nr">70.3%</td></tr>
+        <tr><td>Selfie</td><td class="nr">30,255</td><td class="nr">4.0%</td><td class="nr">1,196</td><td class="nr">90,559</td><td class="nr">10.3%</td><td class="nr">9,075</td><td class="nr">120,814</td><td class="nr">75.0%</td></tr>
+        <tr><td>Viaje</td><td class="nr">945</td><td class="nr">2.9%</td><td class="nr">27</td><td class="nr">84,786</td><td class="nr">8.5%</td><td class="nr">7,005</td><td class="nr">85,731</td><td class="nr">98.9%</td></tr>
+        <tr><td>Ropa</td><td class="nr">949</td><td class="nr">4.7%</td><td class="nr">44</td><td class="nr">46,923</td><td class="nr">9.9%</td><td class="nr">4,553</td><td class="nr">47,872</td><td class="nr">98.0%</td></tr>
+        <tr style="background:#F5F5F5;font-weight:600"><td>Total</td><td class="nr">110,115</td><td class="nr">3.6%</td><td class="nr">4,552</td><td class="nr">590,649</td><td class="nr">11.8%</td><td class="nr">75,559</td><td class="nr">700,764</td><td class="nr">84.3%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="insight-bar">
+    <p>El <strong>84% de todas las reproducciones</strong> provienen del acumulado orgánico. La retención mejora drásticamente en audiencia caliente para todos los pilares — Restaurante pasa de 3.2% a 17.3%, Selfie de 4.0% a 10.3%, Viaje de 2.9% a 8.5%. Esto confirma que los Telomereces son creativos diseñados para convertir a audiencias que ya conocen la marca, no para hacer awareness en frío.</p>
   </div>
 </div>
 
@@ -908,23 +1006,70 @@ new Chart(document.getElementById('c9'), {
   options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>'$'+v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
 });
 
-// CV1 — Reproducciones por pilar
+// CV1 — Reproducciones totales combinadas
 new Chart(document.getElementById('cv1'), {
   type:'bar',
-  data:{ labels:['Carros','Selfie','Restaurante','Ropa','Viaje'],
-    datasets:[{data:[74133,30255,3833,949,945], backgroundColor:[BK,Y,Y,Y,GR], borderRadius:6, borderSkipped:false}]},
+  data:{ labels:['Carros','Restaurante','Selfie','Viaje','Ropa'],
+    datasets:[{data:[249287,197060,120814,85731,47872], backgroundColor:[BK,Y,Y,GR,Y], borderRadius:6, borderSkipped:false}]},
   options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
 });
 
-// CV2 — Reproducciones vs Impresiones
+// CV2 — Retención 100% combinada
 new Chart(document.getElementById('cv2'), {
   type:'bar',
-  data:{ labels:['Carros','Selfie','Restaurante','Ropa','Viaje'],
+  data:{ labels:['Restaurante','Ropa','Selfie','Viaje','Carros'],
+    datasets:[{data:[17.0,9.8,8.7,8.4,6.8], backgroundColor:[BK,Y,Y,Y,GR], borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV3 — Embudo views por etapa combinado
+new Chart(document.getElementById('cv3'), {
+  type:'bar',
+  data:{
+    labels:['25%','50%','75%','95%','100%'],
     datasets:[
-      {label:'Impresiones',data:[75513,30884,3933,962,966], backgroundColor:GR, borderRadius:[5,5,5,5], borderSkipped:false},
-      {label:'Reproducciones',data:[74133,30255,3833,949,945], backgroundColor:Y, borderRadius:[5,5,5,5], borderSkipped:false}
+      {label:'Carros',     data:[49864,32920,26934,17659,16845], backgroundColor:'#1A1A1A', borderRadius:4, borderSkipped:false},
+      {label:'Restaurante',data:[64909,43798,36873,34189,33540], backgroundColor:'#FFC000', borderRadius:4, borderSkipped:false},
+      {label:'Selfie',     data:[25315,16205,12750,11021,10512], backgroundColor:'#AAAAAA', borderRadius:4, borderSkipped:false},
+      {label:'Viaje',      data:[18979,11143,8420,7381,7230],   backgroundColor:'#555555', borderRadius:4, borderSkipped:false},
+      {label:'Ropa',       data:[11155,6963,5451,4798,4714],    backgroundColor:'#CCCCCC', borderRadius:4, borderSkipped:false},
+    ]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{display:true, labels:{color:'#999',font:{size:11,family:'Poppins'},boxWidth:10,boxHeight:10}}},
+    scales:{
+      x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},
+      y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}
+    }
+  }
+});
+
+// CV4 — Views por pilar registros vs acumulado
+new Chart(document.getElementById('cv4'), {
+  type:'bar',
+  data:{ labels:['Carros','Restaurante','Selfie','Viaje','Ropa'],
+    datasets:[
+      {label:'Registros',data:[74133,3833,30255,945,949], backgroundColor:Y, borderRadius:[4,4,4,4], borderSkipped:false},
+      {label:'Acumulado',data:[175154,193227,90559,84786,46923], backgroundColor:BK, borderRadius:[4,4,4,4], borderSkipped:false}
     ]},
   options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV5 — Retención 100% registros
+new Chart(document.getElementById('cv5'), {
+  type:'bar',
+  data:{ labels:['Ropa','Selfie','Carros','Restaurante','Viaje'],
+    datasets:[{data:[4.7,4.0,3.5,3.2,2.9], backgroundColor:[BK,Y,Y,Y,GR], borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV6 — Retención 100% acumulado
+new Chart(document.getElementById('cv6'), {
+  type:'bar',
+  data:{ labels:['Restaurante','Selfie','Ropa','Viaje','Carros'],
+    datasets:[{data:[17.3,10.3,9.9,8.5,8.2], backgroundColor:[BK,Y,Y,Y,GR], borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
 });
 
 // C10 — Telo vs Estáticos acumulado CPR
