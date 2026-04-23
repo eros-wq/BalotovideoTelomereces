@@ -637,88 +637,318 @@
 <div class="section-divider">
   <div class="div-tag">05 · Visualizaciones</div>
   <h2>Reproducciones totales de video</h2>
-  <p>Total de views acumulados por pilar en el período Mar 12 – Abr 14, 2026 (ambas campañas combinadas).</p>
+  <p>Total de views acumulados por pilar en las 3 campañas: Registros · Acumulado orgánico · Compra. Mar 12 – Abr 23, 2026.</p>
 </div>
 
 <div class="page" style="padding-top:60px">
+
+  <!-- KPIs GLOBALES -->
   <div class="kpi-grid kpi-grid-4" style="margin-bottom:32px">
     <div class="kpi-card dark">
       <div class="kpi-label">Reproducciones totales</div>
-      <div class="kpi-val">110,115</div>
-      <div class="kpi-sub">5 pilares · ambas campañas</div>
+      <div class="kpi-val">1,067,146</div>
+      <div class="kpi-sub">10 pilares · 3 campañas</div>
     </div>
     <div class="kpi-card dark">
       <div class="kpi-label">Impresiones totales</div>
-      <div class="kpi-val">112,258</div>
-      <div class="kpi-sub">Mar 12 – Abr 14, 2026</div>
+      <div class="kpi-val">1,528,327</div>
+      <div class="kpi-sub">Mar 12 – Abr 23, 2026</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Mayor volumen</div>
-      <div class="kpi-val">74,133</div>
-      <div class="kpi-sub">Carros · reproducciones</div>
+      <div class="kpi-label">ThruPlays totales</div>
+      <div class="kpi-val">107,710</div>
+      <div class="kpi-sub">videos vistos al 100%</div>
     </div>
     <div class="kpi-card">
-      <div class="kpi-label">Tasa reproducción prom.</div>
-      <div class="kpi-val">98.1%</div>
-      <div class="kpi-sub">views / impresiones</div>
+      <div class="kpi-label">Mejor retención global</div>
+      <div class="kpi-val">15.8%</div>
+      <div class="kpi-sub">Restaurante · ret. al 100%</div>
+    </div>
+  </div>
+
+  <!-- CARDS 3 CAMPAÑAS -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:24px;">
+    <div class="vs-card">
+      <span class="vs-tag">Registros · audiencia fría · 5 videos</span>
+      <h3>112,887 views</h3>
+      <div class="vs-stat"><span class="stat-label">Impresiones</span><span class="stat-val">115,032</span></div>
+      <div class="vs-stat"><span class="stat-label">Ret. 100% prom.</span><span class="stat-val">3.6%</span></div>
+      <div class="vs-stat"><span class="stat-label">ThruPlays</span><span class="stat-val">4,634</span></div>
+      <div class="vs-stat"><span class="stat-label">Mayor volumen</span><span class="stat-val">Carros · 75,417</span></div>
+    </div>
+    <div class="vs-card dark-card">
+      <span class="vs-tag">Acumulado orgánico · caliente · 5 videos</span>
+      <h3 style="color:#fff">593,727 views</h3>
+      <div class="vs-stat"><span class="stat-label">Impresiones</span><span class="stat-val">882,209</span></div>
+      <div class="vs-stat"><span class="stat-label">Ret. 100% prom.</span><span class="stat-val">11.6%</span></div>
+      <div class="vs-stat"><span class="stat-label">ThruPlays</span><span class="stat-val">75,830</span></div>
+      <div class="vs-stat"><span class="stat-label">Mayor volumen</span><span class="stat-val">Restaurante · 193,227</span></div>
+    </div>
+    <div class="vs-card">
+      <span class="vs-tag">Compra · 10 videos (5 orig + 5 nuevos)</span>
+      <h3>360,532 views</h3>
+      <div class="vs-stat"><span class="stat-label">Impresiones</span><span class="stat-val">531,086</span></div>
+      <div class="vs-stat"><span class="stat-label">Ret. 100% prom.</span><span class="stat-val">7.4%</span></div>
+      <div class="vs-stat"><span class="stat-label">ThruPlays</span><span class="stat-val">27,246</span></div>
+      <div class="vs-stat"><span class="stat-label">Mayor volumen</span><span class="stat-val">Viaje · 114,552</span></div>
+    </div>
+  </div>
+
+  <!-- CHARTS FILA 1 -->
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>Reproducciones totales por pilar — todas las campañas</h3>
+      <p class="chart-desc">Suma de views de los 3 vuelos. Carros y Restaurante lideran en volumen total.</p>
+      <div class="chart-legend">
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#FFC000"></div>5 originales</div>
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#1A1A1A"></div>5 nuevos (solo compra)</div>
+      </div>
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="cv1" role="img" aria-label="Views totales por pilar">Carros 288,887 · Restaurante 223,665 · Viaje 203,361 · Selfie 140,829 · Ropa 114,071 · Partidos 44,018 · Vestirse 17,517 · Tiempo 17,167 · Evento 13,037 · Entrenar 4,594.</canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3>Retención al 100% — por pilar total</h3>
+      <p class="chart-desc">% de personas que vieron el video completo en todas las campañas combinadas.</p>
+      <div class="chart-wrap" style="height:280px">
+        <canvas id="cv2" role="img" aria-label="Retención 100% total por pilar">Restaurante 15.8%, Tiempo 10.0%, Selfie 8.5%, Viaje 8.2%, Ropa 8.4%, Evento 9.2%, Carros 6.7%, Entrenar 7.5%, Partidos 6.1%, Vestirse 5.4%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHART STACKED POR CAMPAÑA -->
+  <div class="chart-card">
+    <h3>Views por campaña y pilar — desglose apilado</h3>
+    <p class="chart-desc">Contribución de cada campaña al total de reproducciones por pilar. El acumulado domina en los 5 originales.</p>
+    <div class="chart-legend">
+      <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#FFC000"></div>Registros</div>
+      <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#1A1A1A"></div>Acumulado orgánico</div>
+      <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#AAAAAA"></div>Compra</div>
+    </div>
+    <div class="chart-wrap" style="height:320px">
+      <canvas id="cv3" role="img" aria-label="Views apiladas por campaña y pilar">El acumulado orgánico domina en los pilares originales.</canvas>
+    </div>
+  </div>
+
+  <!-- TABLA COMPLETA TODOS LOS PILARES -->
+  <div class="table-card">
+    <div class="table-card-header">
+      <h3>Reproducciones completas — 10 pilares · 3 campañas</h3>
+      <p>Ordenados por retención al 100%. Los nuevos solo tienen datos de la campaña compra.</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Pilar</th>
+          <th>Tipo</th>
+          <th class="nr">Views reg.</th>
+          <th class="nr">Views acum.</th>
+          <th class="nr">Views compra</th>
+          <th class="nr">Total views</th>
+          <th class="nr">Views 25%</th>
+          <th class="nr">Views 100%</th>
+          <th class="nr">Ret. 100%</th>
+          <th class="nr">ThruPlays</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>Restaurante ⭐</td><td><span class="badge badge-above">original</span></td><td class="nr">3,834</td><td class="nr">193,227</td><td class="nr">26,604</td><td class="nr"><strong>223,665</strong></td><td class="nr">70,258</td><td class="nr">35,418</td><td class="nr"><strong>15.8%</strong></td><td class="nr">34,789</td></tr>
+        <tr><td>Tiempo</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">—</td><td class="nr">—</td><td class="nr">17,167</td><td class="nr">17,167</td><td class="nr">3,992</td><td class="nr">1,721</td><td class="nr">10.0%</td><td class="nr">1,693</td></tr>
+        <tr><td>Evento</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">—</td><td class="nr">—</td><td class="nr">13,037</td><td class="nr">13,037</td><td class="nr">2,818</td><td class="nr">1,204</td><td class="nr">9.2%</td><td class="nr">1,199</td></tr>
+        <tr><td>Selfie</td><td><span class="badge badge-above">original</span></td><td class="nr">31,599</td><td class="nr">90,559</td><td class="nr">18,671</td><td class="nr">140,829</td><td class="nr">29,659</td><td class="nr">12,010</td><td class="nr">8.5%</td><td class="nr">11,743</td></tr>
+        <tr><td>Ropa</td><td><span class="badge badge-above">original</span></td><td class="nr">1,092</td><td class="nr">46,923</td><td class="nr">66,056</td><td class="nr">114,071</td><td class="nr">23,088</td><td class="nr">9,586</td><td class="nr">8.4%</td><td class="nr">9,381</td></tr>
+        <tr><td>Viaje</td><td><span class="badge badge-above">original</span></td><td class="nr">945</td><td class="nr">87,864</td><td class="nr">114,552</td><td class="nr">203,361</td><td class="nr">44,700</td><td class="nr">16,681</td><td class="nr">8.2%</td><td class="nr">16,208</td></tr>
+        <tr><td>Entrenar</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">—</td><td class="nr">—</td><td class="nr">4,594</td><td class="nr">4,594</td><td class="nr">1,027</td><td class="nr">346</td><td class="nr">7.5%</td><td class="nr">336</td></tr>
+        <tr><td>Carros</td><td><span class="badge badge-above">original</span></td><td class="nr">75,417</td><td class="nr">175,154</td><td class="nr">38,316</td><td class="nr">288,887</td><td class="nr">56,664</td><td class="nr">19,272</td><td class="nr">6.7%</td><td class="nr">28,813</td></tr>
+        <tr><td>Partidos</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">—</td><td class="nr">—</td><td class="nr">44,018</td><td class="nr">44,018</td><td class="nr">7,544</td><td class="nr">2,685</td><td class="nr">6.1%</td><td class="nr">2,616</td></tr>
+        <tr><td>Vestirse</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">—</td><td class="nr">—</td><td class="nr">17,517</td><td class="nr">17,517</td><td class="nr">3,126</td><td class="nr">949</td><td class="nr">5.4%</td><td class="nr">932</td></tr>
+        <tr style="background:#F5F5F5;font-weight:600"><td>Total</td><td>—</td><td class="nr">112,887</td><td class="nr">593,727</td><td class="nr">360,532</td><td class="nr">1,067,146</td><td class="nr">242,876</td><td class="nr">99,872</td><td class="nr">9.4%</td><td class="nr">107,710</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RETENCIÓN POR CAMPAÑA -->
+  <div style="margin-top:32px;margin-bottom:16px;"><div class="section-tag">Retención por campaña</div></div>
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>Ret. 100% — Registros <span style="font-size:11px;color:#999;font-weight:400">(audiencia fría)</span></h3>
+      <p class="chart-desc">Muy baja retención en frío, entre 2.9% y 4.3%. El contexto penaliza.</p>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="cv4" role="img" aria-label="Retención registros">Ropa 4.3%, Selfie 4.0%, Carros 3.5%, Restaurante 3.2%, Viaje 2.9%.</canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3>Ret. 100% — Acumulado <span style="font-size:11px;color:#999;font-weight:400">(audiencia caliente)</span></h3>
+      <p class="chart-desc">Retención se multiplica entre 2x y 5x. Restaurante 17.3%.</p>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="cv5" role="img" aria-label="Retención acumulado">Restaurante 17.3%, Selfie 10.3%, Ropa 10.0%, Viaje 8.5%, Carros 8.2%.</canvas>
+      </div>
+    </div>
+    <div class="chart-card" style="margin-top:0">
+      <h3>Ret. 100% — Compra <span style="font-size:11px;color:#999;font-weight:400">(10 videos)</span></h3>
+      <p class="chart-desc">Nuevos videos entran con retención sólida desde el inicio. Tiempo 10% lidera.</p>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="cv6" role="img" aria-label="Retención compra">Tiempo 10.0%, Evento 9.2%, Selfie 7.9%, Entrenar 7.5%, Ropa 7.4%, Viaje 8.0%, Restaurante 7.1%, Carros 6.2%, Partidos 6.1%, Vestirse 5.4%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="insight-bar" style="margin-bottom:12px">
+    <p><strong>1,067,146 reproducciones totales</strong> en todo el período — el acumulado orgánico aporta el 55.6% del total con solo 5 videos y cero inversión adicional. Los 5 videos nuevos de compra suman 360K views en su primer vuelo, con retenciones entre 5.4% y 10%, lo que es un arranque sólido para creativos sin historial.</p>
+  </div>
+  <div class="insight-bar">
+    <p><strong>Restaurante sigue siendo el rey de retención</strong> en todas las campañas donde tiene presencia. En acumulado tiene 17.3% al 100%, y en la nueva campaña de compra mantiene 7.1%. <strong>Tiempo</strong> es el video nuevo que mejor retiene (10.0%) — consistente con su buen desempeño en CPR y rankings de Meta. <strong>Vestirse</strong> cierra el ranking con 5.4%, alineado con su bajo CTR y alto CPR.</p>
+  </div>
+
+</div>
+
+<!-- ===================== SECCIÓN 6: ETAPA DE COMPRA ===================== -->
+<div class="section-divider">
+  <div class="div-tag">06 · Etapa de Compra</div>
+  <h2>Todos los videos en compra</h2>
+  <p>Decisión de mover los 10 Telomereces a objetivo de compra: 5 videos originales + 5 nuevos. Mar 22 – Abr 20, 2026.</p>
+</div>
+
+<div class="page" style="padding-top:60px">
+
+  <div class="kpi-grid kpi-grid-4" style="margin-bottom:32px">
+    <div class="kpi-card dark">
+      <div class="kpi-label">Total compras</div>
+      <div class="kpi-val">3,807</div>
+      <div class="kpi-sub">10 videos · etapa compra</div>
+    </div>
+    <div class="kpi-card dark">
+      <div class="kpi-label">Inversión total</div>
+      <div class="kpi-val">$2.21M</div>
+      <div class="kpi-sub">COP</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Mejor CPR</div>
+      <div class="kpi-val">$437</div>
+      <div class="kpi-sub">Partidos · COP</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Mejor CTR</div>
+      <div class="kpi-val">4.02%</div>
+      <div class="kpi-sub">Carros · link CTR</div>
+    </div>
+  </div>
+
+  <!-- ORIGINALES VS NUEVOS -->
+  <div class="vs-grid" style="margin-bottom:24px">
+    <div class="vs-card">
+      <span class="vs-tag">5 videos originales · reactivados</span>
+      <h3>2,627 compras</h3>
+      <div class="vs-stat"><span class="stat-label">Inversión</span><span class="stat-val">$1,552,778 COP</span></div>
+      <div class="vs-stat"><span class="stat-label">CPR ponderado</span><span class="stat-val">$591 COP</span></div>
+      <div class="vs-stat"><span class="stat-label">CTR link promedio</span><span class="stat-val">2.60%</span></div>
+      <div class="vs-stat"><span class="stat-label">Conv. ranking</span><span class="stat-val">Above avg (todos)</span></div>
+    </div>
+    <div class="vs-card dark-card">
+      <span class="vs-tag">5 videos nuevos · primer vuelo</span>
+      <h3 style="color:#fff">1,180 compras</h3>
+      <div class="vs-stat"><span class="stat-label">Inversión</span><span class="stat-val">$660,002 COP</span></div>
+      <div class="vs-stat"><span class="stat-label">CPR ponderado</span><span class="stat-val">$559 COP</span></div>
+      <div class="vs-stat"><span class="stat-label">CTR link promedio</span><span class="stat-val">1.79%</span></div>
+      <div class="vs-stat"><span class="stat-label">Conv. ranking</span><span class="stat-val">Mixto (2 sin datos)</span></div>
     </div>
   </div>
 
   <div class="chart-row">
     <div class="chart-card">
-      <h3>Reproducciones por pilar</h3>
-      <p class="chart-desc">Total de veces que el video fue reproducido en el período completo.</p>
+      <h3>Compras por video — ordenado por volumen</h3>
+      <p class="chart-desc">Total de conversiones de compra por pilar en el período.</p>
+      <div class="chart-legend">
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#FFC000"></div>Originales</div>
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#1A1A1A"></div>Nuevos</div>
+      </div>
       <div class="chart-wrap" style="height:280px">
-        <canvas id="cv1" role="img" aria-label="Reproducciones por pilar">Carros 74133, Selfie 30255, Restaurante 3833, Ropa 949, Viaje 945.</canvas>
+        <canvas id="cp1" role="img" aria-label="Compras por video">Viaje 1090, Ropa 866, Partidos 775, Carros 433, Tiempo 271, Selfie 129, Restaurante 109, Evento 83, Vestirse 37, Entrenar 14.</canvas>
       </div>
     </div>
     <div class="chart-card">
-      <h3>Reproducciones vs Impresiones</h3>
-      <p class="chart-desc">Comparación entre impresiones totales y reproducciones efectivas del video.</p>
+      <h3>CPR por video — menor es mejor</h3>
+      <p class="chart-desc">Costo por compra en COP. Partidos y Carros lideran en eficiencia.</p>
+      <div class="chart-legend">
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#FFC000"></div>Originales</div>
+        <div class="chart-legend-item"><div class="chart-legend-dot" style="background:#1A1A1A"></div>Nuevos</div>
+      </div>
       <div class="chart-wrap" style="height:280px">
-        <canvas id="cv2" role="img" aria-label="Reproducciones vs impresiones">Todos los pilares tienen tasa de reproducción superior al 97%.</canvas>
+        <canvas id="cp2" role="img" aria-label="CPR por video">Partidos $437, Carros $472, Ropa $486, Tiempo $572, Viaje $665, Restaurante $673, Evento $754, Selfie $1002, Entrenar $1040, Vestirse $2417.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>CTR link click-through rate</h3>
+      <p class="chart-desc">% de clic al enlace. Carros y Tiempo destacan entre sus grupos.</p>
+      <div class="chart-wrap" style="height:260px">
+        <canvas id="cp3" role="img" aria-label="CTR por video etapa compra">Carros 4.02%, Tiempo 3.34%, Viaje 2.93%, Selfie 2.61%, Ropa 2.03%, Evento 2.22%, Partidos 1.92%, Restaurante 1.39%, Entrenar 0.86%, Vestirse 0.63%.</canvas>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h3>Inversión vs compras — eficiencia relativa</h3>
+      <p class="chart-desc">Relación entre presupuesto asignado y conversiones obtenidas por video.</p>
+      <div class="chart-wrap" style="height:260px">
+        <canvas id="cp4" role="img" aria-label="Inversión vs compras scatter">Viaje tiene la mayor inversión pero no el mejor CPR. Partidos tiene buen volumen con inversión moderada.</canvas>
       </div>
     </div>
   </div>
 
   <div class="table-card">
     <div class="table-card-header">
-      <h3>Detalle de reproducciones y retención por pilar</h3>
-      <p>Reproducciones totales, impresiones y tasa de visualización completa (100%). Período combinado ambas campañas.</p>
+      <h3>Detalle completo — 10 videos en etapa de compra</h3>
+      <p>Ordenados por CPR (menor a mayor). Período Mar 22 – Abr 20, 2026.</p>
     </div>
     <table>
       <thead>
         <tr>
           <th>Pilar</th>
-          <th class="nr">Impresiones</th>
-          <th class="nr">Reproducciones</th>
-          <th class="nr">Tasa rep.</th>
-          <th class="nr">Views 25%</th>
-          <th class="nr">Views 50%</th>
-          <th class="nr">Views 75%</th>
-          <th class="nr">Views 100%</th>
-          <th class="nr">Ret. 100%</th>
+          <th>Grupo</th>
+          <th class="nr">Compras</th>
+          <th class="nr">CTR link</th>
+          <th class="nr">CTR all</th>
+          <th class="nr">CPR (COP)</th>
+          <th class="nr">Inversión (COP)</th>
+          <th class="nr">Land. pages</th>
+          <th>Quality</th>
+          <th>Conv. rank</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="highlight"><td>Carros ⭐ mayor volumen</td><td class="nr">75,513</td><td class="nr">74,133</td><td class="nr">98.2%</td><td class="nr">7,929</td><td class="nr">4,826</td><td class="nr">3,566</td><td class="nr">2,568</td><td class="nr">3.5%</td></tr>
-        <tr><td>Selfie</td><td class="nr">30,884</td><td class="nr">30,255</td><td class="nr">97.9%</td><td class="nr">3,934</td><td class="nr">2,378</td><td class="nr">1,790</td><td class="nr">1,224</td><td class="nr">4.0%</td></tr>
-        <tr><td>Restaurante</td><td class="nr">3,933</td><td class="nr">3,833</td><td class="nr">97.5%</td><td class="nr">406</td><td class="nr">228</td><td class="nr">157</td><td class="nr">124</td><td class="nr">3.2%</td></tr>
-        <tr><td>Ropa</td><td class="nr">962</td><td class="nr">949</td><td class="nr">98.6%</td><td class="nr">127</td><td class="nr">80</td><td class="nr">58</td><td class="nr">45</td><td class="nr">4.7%</td></tr>
-        <tr><td>Viaje</td><td class="nr">966</td><td class="nr">945</td><td class="nr">97.8%</td><td class="nr">102</td><td class="nr">59</td><td class="nr">34</td><td class="nr">27</td><td class="nr">2.9%</td></tr>
-        <tr style="background:#F5F5F5;font-weight:600"><td>Total</td><td class="nr">112,258</td><td class="nr">110,115</td><td class="nr">98.1%</td><td class="nr">12,498</td><td class="nr">7,571</td><td class="nr">5,605</td><td class="nr">3,988</td><td class="nr">3.6%</td></tr>
+        <tr class="highlight"><td>Partidos ⭐ mejor CPR</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">775</td><td class="nr">1.92%</td><td class="nr">2.06%</td><td class="nr"><strong>$437</strong></td><td class="nr">$338,369</td><td class="nr">281</td><td>Below avg</td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Carros</td><td><span class="badge badge-above">original</span></td><td class="nr">433</td><td class="nr"><strong>4.02%</strong></td><td class="nr">4.23%</td><td class="nr">$472</td><td class="nr">$204,463</td><td class="nr">355</td><td><span class="badge badge-red">below avg</span></td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Ropa</td><td><span class="badge badge-above">original</span></td><td class="nr">866</td><td class="nr">2.03%</td><td class="nr">2.64%</td><td class="nr">$486</td><td class="nr">$421,131</td><td class="nr">462</td><td>Average</td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Tiempo</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">271</td><td class="nr">3.34%</td><td class="nr">3.32%</td><td class="nr">$572</td><td class="nr">$155,094</td><td class="nr">195</td><td><span class="badge badge-above">above avg</span></td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Viaje</td><td><span class="badge badge-above">original</span></td><td class="nr">1,090</td><td class="nr">2.93%</td><td class="nr">3.17%</td><td class="nr">$665</td><td class="nr">$724,602</td><td class="nr">1,005</td><td>Average</td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Restaurante</td><td><span class="badge badge-above">original</span></td><td class="nr">109</td><td class="nr">1.39%</td><td class="nr">2.22%</td><td class="nr">$673</td><td class="nr">$73,369</td><td class="nr">44</td><td>Average</td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Evento</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">83</td><td class="nr">2.22%</td><td class="nr">2.99%</td><td class="nr">$754</td><td class="nr">$62,541</td><td class="nr">59</td><td>—</td><td>—</td></tr>
+        <tr><td>Selfie</td><td><span class="badge badge-above">original</span></td><td class="nr">129</td><td class="nr">2.61%</td><td class="nr">3.59%</td><td class="nr">$1,002</td><td class="nr">$129,213</td><td class="nr">157</td><td>Average</td><td><span class="badge badge-above">above avg</span></td></tr>
+        <tr><td>Entrenar</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">14</td><td class="nr">0.86%</td><td class="nr">1.50%</td><td class="nr">$1,040</td><td class="nr">$14,565</td><td class="nr">8</td><td>—</td><td>—</td></tr>
+        <tr><td>Vestirse</td><td><span class="badge badge-black">nuevo</span></td><td class="nr">37</td><td class="nr">0.63%</td><td class="nr">1.22%</td><td class="nr"><span class="badge badge-red">$2,417</span></td><td class="nr">$89,433</td><td class="nr">38</td><td>—</td><td>—</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="insight-bar">
-    <p><strong>Nota metodológica:</strong> Las reproducciones corresponden al archivo de engagement del período completo y consolidan ambas campañas (registros + acumulado). <strong>Carros concentra el 67% de todas las reproducciones</strong> (74,133) por ser el video con mayor inversión y alcance. Ropa, a pesar de tener el menor volumen de views, tiene la mejor tasa de visualización completa (4.7%) — lo que confirma su superioridad en calidad creativa.</p>
+  <div class="insight-bar" style="margin-bottom:16px">
+    <p><strong>Partidos sorprende como el mejor nuevo video:</strong> Con CPR de $437 COP es el más eficiente de toda la etapa, por encima incluso de los originales. Generó 775 compras — segundo en volumen solo detrás de Viaje — con $338K de inversión. A pesar de tener quality ranking "Below average", el conversion rate es "Above average", lo que indica que el creativo no engancha a todos pero los que engancha convierten muy bien.</p>
   </div>
+  <div class="insight-bar" style="margin-bottom:16px">
+    <p><strong>Tiempo es el nuevo video mejor redondeado:</strong> CPR de $572, CTR de 3.34% y es el único nuevo con Quality + Engagement + Conversion todos "Above average". Con solo $155K de inversión hay margen claro para escalar.</p>
+  </div>
+  <div class="insight-bar" style="margin-bottom:16px">
+    <p><strong>Vestirse y Entrenar necesitan revisión:</strong> CPR de $2,417 y $1,040 respectivamente, sin rankings de Meta todavía — probablemente por bajo volumen de datos. Vestirse en particular tiene el CTR más bajo (0.63%) y el CPR más alto de los 10 videos. Sin señal positiva en ninguna métrica.</p>
+  </div>
+  <div class="insight-bar">
+    <p><strong>Carros tiene una tensión interesante:</strong> Quality ranking "Below average" (el creativo no es atractivo para Meta) pero CTR del 4.02% — el más alto de todos — y conversion rank "Above average". Esto sugiere que la audiencia que llega al anuncio responde bien, pero Meta no lo está distribuyendo de manera amplia por considerarlo de menor calidad visual. Vale la pena probar una variante del mismo concepto con mejor producción.</p>
+  </div>
+
 </div>
 
-<!-- ===================== SECCIÓN 6: RECOMENDACIONES ===================== -->
+<!-- ===================== SECCIÓN 7: RECOMENDACIONES ===================== -->
 <div class="section-divider">
-  <div class="div-tag">06 · Conclusiones</div>
+  <div class="div-tag">07 · Conclusiones</div>
   <h2>Recomendaciones estratégicas</h2>
   <p>Acciones concretas basadas en el análisis completo de registros, engagement y acumulado.</p>
 </div>
@@ -908,23 +1138,123 @@ new Chart(document.getElementById('c9'), {
   options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>'$'+v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
 });
 
-// CV1 — Reproducciones por pilar
+// CV1 — Views totales por pilar (todas las campañas)
+const pilAll = ['Carros','Restaurante','Viaje','Selfie','Ropa','Partidos','Vestirse','Tiempo','Evento','Entrenar'];
+const viewsTot = [288887,223665,203361,140829,114071,44018,17517,17167,13037,4594];
+const isOrig = [true,true,true,true,true,false,false,false,false,false];
 new Chart(document.getElementById('cv1'), {
   type:'bar',
-  data:{ labels:['Carros','Selfie','Restaurante','Ropa','Viaje'],
-    datasets:[{data:[74133,30255,3833,949,945], backgroundColor:[BK,Y,Y,Y,GR], borderRadius:6, borderSkipped:false}]},
-  options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+  data:{ labels:pilAll, datasets:[{data:viewsTot, backgroundColor:isOrig.map(o=>o?Y:BK), borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:10},maxRotation:30},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
 });
 
-// CV2 — Reproducciones vs Impresiones
+// CV2 — Retención 100% total por pilar
+const pilRet = ['Restaurante','Tiempo','Evento','Selfie','Ropa','Viaje','Entrenar','Carros','Partidos','Vestirse'];
+const ret100Tot = [15.8,10.0,9.2,8.5,8.4,8.2,7.5,6.7,6.1,5.4];
+const isOrigRet = [true,false,false,true,true,true,false,true,false,false];
 new Chart(document.getElementById('cv2'), {
   type:'bar',
-  data:{ labels:['Carros','Selfie','Restaurante','Ropa','Viaje'],
+  data:{ labels:pilRet, datasets:[{data:ret100Tot, backgroundColor:isOrigRet.map(o=>o?Y:BK), borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:10},maxRotation:30},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV3 — Stacked views por campaña y pilar (originales)
+new Chart(document.getElementById('cv3'), {
+  type:'bar',
+  data:{ labels:['Carros','Restaurante','Viaje','Selfie','Ropa'],
     datasets:[
-      {label:'Impresiones',data:[75513,30884,3933,962,966], backgroundColor:GR, borderRadius:[5,5,5,5], borderSkipped:false},
-      {label:'Reproducciones',data:[74133,30255,3833,949,945], backgroundColor:Y, borderRadius:[5,5,5,5], borderSkipped:false}
+      {label:'Registros', data:[75417,3834,945,31599,1092],    backgroundColor:Y,    borderSkipped:false},
+      {label:'Acumulado', data:[175154,193227,87864,90559,46923], backgroundColor:BK, borderSkipped:false},
+      {label:'Compra',    data:[38316,26604,114552,18671,66056], backgroundColor:'#888', borderSkipped:false},
     ]},
-  options: opts({scales:{x:{ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+  options:{responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:true,labels:{color:'#999',font:{size:11,family:'Poppins'},boxWidth:10,boxHeight:10}}},
+    scales:{
+      x:{stacked:true,ticks:{color:'#999',font:{size:12}},grid:{display:false},border:{display:false}},
+      y:{stacked:true,ticks:{color:'#999',font:{size:11},callback:v=>v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}
+    }
+  }
+});
+
+// CV4 — Ret 100% Registros
+new Chart(document.getElementById('cv4'), {
+  type:'bar',
+  data:{ labels:['Ropa','Selfie','Carros','Restaurante','Viaje'],
+    datasets:[{data:[4.3,4.0,3.5,3.2,2.9], backgroundColor:Y, borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV5 — Ret 100% Acumulado
+new Chart(document.getElementById('cv5'), {
+  type:'bar',
+  data:{ labels:['Restaurante','Selfie','Ropa','Viaje','Carros'],
+    datasets:[{data:[17.3,10.3,10.0,8.5,8.2], backgroundColor:BK, borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CV6 — Ret 100% Compra (10 videos)
+new Chart(document.getElementById('cv6'), {
+  type:'bar',
+  data:{ labels:['Tiempo','Evento','Viaje','Selfie','Entrenar','Ropa','Restaurante','Carros','Partidos','Vestirse'],
+    datasets:[{data:[10.0,9.2,8.0,7.9,7.5,7.4,7.1,6.2,6.1,5.4],
+      backgroundColor:[BK,BK,Y,Y,BK,Y,Y,Y,BK,BK], borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:9},maxRotation:35},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+// CP1 — Compras por video
+const cpVideos = [
+  {n:'Viaje',g:'ori',compras:1090,ctr:2.93,cpr:665,inv:724602},
+  {n:'Ropa',g:'ori',compras:866,ctr:2.03,cpr:486,inv:421131},
+  {n:'Partidos',g:'new',compras:775,ctr:1.92,cpr:437,inv:338369},
+  {n:'Carros',g:'ori',compras:433,ctr:4.02,cpr:472,inv:204463},
+  {n:'Tiempo',g:'new',compras:271,ctr:3.34,cpr:572,inv:155094},
+  {n:'Selfie',g:'ori',compras:129,ctr:2.61,cpr:1002,inv:129213},
+  {n:'Restaurante',g:'ori',compras:109,ctr:1.39,cpr:673,inv:73369},
+  {n:'Evento',g:'new',compras:83,ctr:2.22,cpr:754,inv:62541},
+  {n:'Vestirse',g:'new',compras:37,ctr:0.63,cpr:2417,inv:89433},
+  {n:'Entrenar',g:'new',compras:14,ctr:0.86,cpr:1040,inv:14565},
+];
+const cpSortedVol = [...cpVideos].sort((a,b)=>b.compras-a.compras);
+const cpSortedCPR = [...cpVideos].sort((a,b)=>a.cpr-b.cpr);
+const cpSortedCTR = [...cpVideos].sort((a,b)=>b.ctr-a.ctr);
+const cpColor = v => v.g==='ori' ? Y : BK;
+
+new Chart(document.getElementById('cp1'), {
+  type:'bar',
+  data:{ labels:cpSortedVol.map(v=>v.n),
+    datasets:[{data:cpSortedVol.map(v=>v.compras), backgroundColor:cpSortedVol.map(cpColor), borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11}},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+new Chart(document.getElementById('cp2'), {
+  type:'bar',
+  data:{ labels:cpSortedCPR.map(v=>v.n),
+    datasets:[{data:cpSortedCPR.map(v=>v.cpr), backgroundColor:cpSortedCPR.map(cpColor), borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>'$'+v.toLocaleString()},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+new Chart(document.getElementById('cp3'), {
+  type:'bar',
+  data:{ labels:cpSortedCTR.map(v=>v.n),
+    datasets:[{data:cpSortedCTR.map(v=>v.ctr), backgroundColor:cpSortedCTR.map(cpColor), borderRadius:6, borderSkipped:false}]},
+  options: opts({scales:{x:{ticks:{color:'#999',font:{size:11}},grid:{display:false},border:{display:false}},y:{ticks:{color:'#999',font:{size:11},callback:v=>v+'%'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false}}}})
+});
+
+new Chart(document.getElementById('cp4'), {
+  type:'bubble',
+  data:{datasets:[
+    {label:'Originales', data:cpVideos.filter(v=>v.g==='ori').map(v=>({x:v.inv/1000,y:v.compras,r:Math.max(6,Math.sqrt(v.compras/8))})), backgroundColor:'rgba(255,192,0,0.7)', borderColor:Y},
+    {label:'Nuevos',     data:cpVideos.filter(v=>v.g==='new').map(v=>({x:v.inv/1000,y:v.compras,r:Math.max(6,Math.sqrt(v.compras/8))})), backgroundColor:'rgba(26,26,26,0.7)', borderColor:BK},
+  ]},
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{display:true,labels:{color:'#999',font:{size:11,family:'Poppins'},boxWidth:10,boxHeight:10}},
+      tooltip:{callbacks:{label:ctx=>{const d=ctx.raw;return `${ctx.dataset.label} — inv: $${Math.round(d.x)}K · compras: ${d.y}`;},}}},
+    scales:{
+      x:{ticks:{color:'#999',font:{size:11},callback:v=>'$'+v+'K'},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false},title:{display:true,text:'Inversión (COP miles)',color:'#999',font:{size:11}}},
+      y:{ticks:{color:'#999',font:{size:11}},grid:{color:'rgba(0,0,0,0.06)'},border:{display:false},title:{display:true,text:'Compras',color:'#999',font:{size:11}},min:0,max:1300}
+    }
+  }
 });
 
 // C10 — Telo vs Estáticos acumulado CPR
